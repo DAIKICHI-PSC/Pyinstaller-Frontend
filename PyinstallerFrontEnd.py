@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import sys
 import os
-from PySide2 import QtCore,QtGui,QtWidgets
+from PySide6 import QtCore,QtGui,QtWidgets
 from PIFE import Ui_MainWindow
 
 selfDir = os.getcwd()

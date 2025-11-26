@@ -10,12 +10,12 @@ Python環境：
 Python 3.7
 
 必要なモジュール：
-PySide2
+PySide6
 pyinstaller
   
 インストール1：
 PySide2がインストールされてない場合は、コンソールで以下を実行して下さい。
-pip install pyside2
+pip install pyside6
 pyinstallerがインストールされてない場合は、コンソールで以下を実行して下さい。
 pip install pyinstaller
 pythonnet（エラーが発生した場合）
