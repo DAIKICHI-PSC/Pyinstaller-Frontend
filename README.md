@@ -10,14 +10,14 @@ Python Environment:
 Python 3.7  
 
 Modules need to be installed:  
-PySide2  
+PySide6
   
 Program need to be installed:  
 pyinstaller  
   
 Installation1:  
-PySide2(If you have not installed it.)  
-pip install pyside2 6
+PySide6(If you have not installed it.)  
+pip install pyside6
 pyinstaller(If you have not installed it.)  
 pip install pyinstaller  
 pythonnet(If you get an error.)  
