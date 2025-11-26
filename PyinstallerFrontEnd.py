@@ -93,17 +93,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             msgbox = QtWidgets.QMessageBox(self)
             msgbox.setWindowTitle("Message")
             msgbox.setText("Please set the path to Pyinstaller.")
-            ret = msgbox.exec_()
+            ret = msgbox.exec()
         elif os.path.isfile(self.ui.lineEdit2.text()) == False:
             msgbox = QtWidgets.QMessageBox(self)
             msgbox.setWindowTitle("Message")
             msgbox.setText("Please select a python file.")
-            ret = msgbox.exec_()
+            ret = msgbox.exec()
         elif self.ui.checkBox4.isChecked() == True and os.path.isfile(self.ui.lineEdit3.text()) == False:
             msgbox = QtWidgets.QMessageBox(self)
             msgbox.setWindowTitle("Message")
             msgbox.setText("Please select a icon file.")
-            ret = msgbox.exec_()
+            ret = msgbox.exec()
         else:
             piPath = self.ui.lineEdit1.text() + " "
             pyPath = self.ui.lineEdit2.text()
@@ -133,7 +133,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             msgbox = QtWidgets.QMessageBox(self)
             msgbox.setWindowTitle("Message")
             msgbox.setText(cmd)
-            ret = msgbox.exec_()
+            ret = msgbox.exec()
 
             filename1 = pyPath.rsplit(".", 1)
             filename2 = filename1[0].rsplit("/", 1)
@@ -144,12 +144,12 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 msgbox = QtWidgets.QMessageBox(self)
                 msgbox.setWindowTitle("Message")
                 msgbox.setText("The selected file is converted.")
-                ret = msgbox.exec_()
+                ret = msgbox.exec()
             else: 
                 msgbox = QtWidgets.QMessageBox(self)
                 msgbox.setWindowTitle("Message")
                 msgbox.setText("ERROR CODE : " + str(ret))
-                ret = msgbox.exec_()
+                ret = msgbox.exec()
 
     def pushButton5_clicked(self):
         FilePath, _ = QtWidgets.QFileDialog.getOpenFileName(self, "Python File", "",'py File (*.py)')
@@ -183,4 +183,4 @@ if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     dlg = MainWindow()
     dlg.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
