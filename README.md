@@ -17,7 +17,7 @@ pyinstaller
   
 Installation1:  
 PySide2(If you have not installed it.)  
-pip install pyside2  
+pip install pyside2 6
 pyinstaller(If you have not installed it.)  
 pip install pyinstaller  
 pythonnet(If you get an error.)  
